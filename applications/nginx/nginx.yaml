@@ -46,4 +46,4 @@ spec:
               service:
                 name: nginx-project
                 port:
-                  number: 8080
+                  number: 9991
