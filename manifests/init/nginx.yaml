@@ -4,16 +4,16 @@ kind: Application
 metadata:
   labels:
     app_level: internal
-  name: kubernetes-dashboard
+  name: nginx
   namespace: argocd
 spec:
   destination:
     name: ""
-    namespace: kubernetes-dashboard
+    namespace: applications
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: kubernetes-dashboard
+    path: applications/nginx
     repoURL: https://github.com/a10pepo/k8sraspberry
     targetRevision: main
   syncPolicy:
